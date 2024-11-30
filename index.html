@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="background-music" loop autoplay>
+        <source src="BGM.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+  <div id="initial-section">
+    <h1>🎁</h1>
+    <button id="startButton"> Open </button>
+    <p>Oiii!! it’s me 💕</p>
+  </div>
+  
+    <!-- Countdown Section -->
+    <div id="countdown-section" style="display: none;">
+        <h1 id="countdown">3</h1>
+      </div>
+    
+      <!-- Cake Section -->
+      <div id="cake-section" style="display: none;">
+        <img id="cake" src="cake.png" alt="Birthday Cake">
+        <div id="candle">
+          <div class="flame"></div>
+        </div>
+        <p1>Blow out the candle!</p1>
+        <div>
+            <p2>touch the flame to blow out</p2>
+          </div>
+      </div>
+        
+      <!-- Cutting Section -->
+      <div id="cutting-section" style="display: none;">
+        <img id="cut-cake" src="cutcake.png" alt="Cut Cake" style="width: 100%; max-width: 600px; margin: 0 auto; display: block;">
+        <p>Happy Birthday, dearo!</p>
+        <p id="poem" style="display: none;">A new day,<br>New hope,<br>New happiness!</p>
+        <button id="nextButton">Next</button>
+    </div>
+      <!-- Second Page Section -->
+  <div id="second-page" style="display: none;">
+    <img src="second-photo1.jpg" alt="Second Photo" style="width: 50%; max-width: 400px; margin: 0% auto; display: block;">
+    <p id="second-poem">The journey continues,<br>Through time and space,<br>With love and grace!</p>
+    <button1 id="exitButton">Exit</button1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
